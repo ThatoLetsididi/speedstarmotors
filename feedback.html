@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Feedback Form</title>
+</head>
+<body>
+
+    <script src="script.js" defer></script>
+
+    <h1>Customer Feedback Form</h1>
+    <p>Please provide your feedback below:</p>
+    <p><strong>Note:</strong> All fields are required.</p>
+
+    <form action="/submit-feedback" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="rating">Rating:</label><br>
+        <select id="rating" name="rating" required>
+            <option value="1">1 - Very Dissatisfied</option>
+            <option value="2">2 - Dissatisfied</option>
+            <option value="3">3 - Neutral</option>
+            <option value="4">4 - Satisfied</option>
+            <option value="5">5 - Very Satisfied</option>
+        </select><br><br>
+
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+</select></form>
