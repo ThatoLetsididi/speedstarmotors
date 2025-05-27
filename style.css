@@ -1,5 +1,5 @@
 body {
-    font-family: Ariel, sans-serif;
+    font-family: Arial, sans-serif;
     margin:0;
     padding: 0;
     background-color: #ffffff;
@@ -192,3 +192,24 @@ body {
             width: 100%;
         }
     }
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery-item {
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

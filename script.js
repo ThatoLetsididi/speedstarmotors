@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function validateForm() {
     const name = document.querySelector('#name').value.trim();
     const email = document.querySelector('#email').value.trim();
-    const feedback = document.querySelector('#feedback').value.trim();
+    const feedback = document.querySelector('#comments').value.trim();
     let isValid = true;
 
     if (name === '') {
